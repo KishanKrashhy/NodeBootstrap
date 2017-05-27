@@ -27,6 +27,6 @@ router.get('*',(req,res)=>{
     res.sendFile(path+'404.html');
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log('listening at Port 3000')
 })
